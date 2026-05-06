@@ -17,6 +17,12 @@ export default function HomePage() {
 
       <div className="flex flex-wrap gap-3">
         <Link
+          href="/products"
+          className="rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+        >
+          Ir para produtos
+        </Link>
+        <Link
           href="/api/health"
           className="rounded-lg bg-slate-900 px-4 py-2 font-medium text-white transition hover:bg-slate-700"
         >
