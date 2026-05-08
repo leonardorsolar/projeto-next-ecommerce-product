@@ -23,6 +23,12 @@ export default function HomePage() {
           Ir para produtos
         </Link>
         <Link
+          href="/users"
+          className="rounded-lg bg-purple-600 px-4 py-2 font-medium text-white transition hover:bg-purple-700"
+        >
+          Ir para usuários
+        </Link>
+        <Link
           href="/api/health"
           className="rounded-lg bg-slate-900 px-4 py-2 font-medium text-white transition hover:bg-slate-700"
         >
