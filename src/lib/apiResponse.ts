@@ -5,9 +5,9 @@ export const ok = (data: unknown) => NextResponse.json(data, { status: 200 })
 export const created = (data: unknown) =>
   NextResponse.json(data, { status: 201 })
 
-export const notFound = (message: string) =>
+export const notFound = (message: string, code = 'PRODUCT_NOT_FOUND') =>
   NextResponse.json(
-    { error: { code: 'PRODUCT_NOT_FOUND', message } },
+    { error: { code, message } },
     { status: 404 },
   )
 
